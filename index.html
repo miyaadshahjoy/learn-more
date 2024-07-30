@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>[JavaScript]</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav>
+          <div class="header__links">
+            <button class="button btn--links btn--scrollFrom">Gallery</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <h1>JavaScript Rocks...🚀🚀</h1>
+
+      <input type="text" name="input" id="input" />
+    </div>
+
+    <div class="container">
+      <button id="showMessage">message after 2 seconds</button>
+      <button id="cancelMessage">cancel the message</button>
+    </div>
+    <div class="container timerContainer">
+      <div class="timer" style="margin-bottom: 1.1875rem">
+        Timer: <span class="time">05:00</span>
+      </div>
+      <button id="playTimer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 384 512"
+          width="25px"
+          height="25px"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+          />
+        </svg>
+      </button>
+      <button id="pauseTimer" class="hide">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+          width="25px"
+          height="25px"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M48 64C21.5 64 0 85.5 0 112L0 400c0 26.5 21.5 48 48 48l32 0c26.5 0 48-21.5 48-48l0-288c0-26.5-21.5-48-48-48L48 64zm192 0c-26.5 0-48 21.5-48 48l0 288c0 26.5 21.5 48 48 48l32 0c26.5 0 48-21.5 48-48l0-288c0-26.5-21.5-48-48-48l-32 0z"
+          />
+        </svg>
+      </button>
+      <button id="resetTimer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          width="25px"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M48.5 224L40 224c-13.3 0-24-10.7-24-24L16 72c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2L98.6 96.6c87.6-86.5 228.7-86.2 315.8 1c87.5 87.5 87.5 229.3 0 316.8s-229.3 87.5-316.8 0c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0c62.5 62.5 163.8 62.5 226.3 0s62.5-163.8 0-226.3c-62.2-62.2-162.7-62.5-225.3-1L185 183c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8L48.5 224z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos culpa
+        voluptatibus cum atque pariatur recusandae molestias quidem, ab
+        distinctio illum assumenda quisquam ad facere dolor eius voluptate
+        natus, commodi impedit! Consectetur amet corporis est soluta velit fugit
+        quos, incidunt eius distinctio officia sunt optio totam! Aperiam neque,
+        ducimus ipsa quae, id ex quibusdam, dolorum numquam fugit voluptatibus
+        facere illo enim! Fuga illum provident adipisci rem ipsa, vitae, ipsum
+        illo reprehenderit ullam odit facilis, optio laborum repudiandae culpa
+        dolore ea alias voluptatum aut accusantium itaque distinctio officiis
+        amet consectetur? Non, saepe.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos culpa
+        voluptatibus cum atque pariatur recusandae molestias quidem, ab
+        distinctio illum assumenda quisquam ad facere dolor eius voluptate
+        natus, commodi impedit! Consectetur amet corporis est soluta velit fugit
+        quos, incidunt eius distinctio officia sunt optio totam! Aperiam neque,
+        ducimus ipsa quae, id ex quibusdam, dolorum numquam fugit voluptatibus
+        facere illo enim! Fuga illum provident adipisci rem ipsa, vitae, ipsum
+        illo reprehenderit ullam odit facilis, optio laborum repudiandae culpa
+        dolore ea alias voluptatum aut accusantium itaque distinctio officiis
+        amet consectetur? Non, saepe.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos culpa
+        voluptatibus cum atque pariatur recusandae molestias quidem, ab
+        distinctio illum assumenda quisquam ad facere dolor eius voluptate
+        natus, commodi impedit! Consectetur amet corporis est soluta velit fugit
+        quos, incidunt eius distinctio officia sunt optio totam! Aperiam neque,
+        ducimus ipsa quae, id ex quibusdam, dolorum numquam fugit voluptatibus
+        facere illo enim! Fuga illum provident adipisci rem ipsa, vitae, ipsum
+        illo reprehenderit ullam odit facilis, optio laborum repudiandae culpa
+        dolore ea alias voluptatum aut accusantium itaque distinctio officiis
+        amet consectetur? Non, saepe.
+      </p>
+    </div>
+    <div class="container">
+      <div class="gallery">
+        <img
+          src="images/image-1.jpg"
+          alt="image-1"
+          width="100%"
+          class="gallery-image"
+          designer="miyaad joy"
+          data-version-no="3.0"
+        />
+        <img
+          src="images/image-2.jpg"
+          alt="image-2"
+          width="100%"
+          designer="miyaad joy"
+        />
+        <img
+          src="images/image-3.jpg"
+          alt="image-3"
+          width="100%"
+          designer="miyaad joy"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos culpa
+        voluptatibus cum atque pariatur recusandae molestias quidem, ab
+        distinctio illum assumenda quisquam ad facere dolor eius voluptate
+        natus, commodi impedit! Consectetur amet corporis est soluta velit fugit
+        quos, incidunt eius distinctio officia sunt optio totam! Aperiam neque,
+        ducimus ipsa quae, id ex quibusdam, dolorum numquam fugit voluptatibus
+        facere illo enim! Fuga illum provident adipisci rem ipsa, vitae, ipsum
+        illo reprehenderit ullam odit facilis, optio laborum repudiandae culpa
+        dolore ea alias voluptatum aut accusantium itaque distinctio officiis
+        amet consectetur? Non, saepe.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos culpa
+        voluptatibus cum atque pariatur recusandae molestias quidem, ab
+        distinctio illum assumenda quisquam ad facere dolor eius voluptate
+        natus, commodi impedit! Consectetur amet corporis est soluta velit fugit
+        quos, incidunt eius distinctio officia sunt optio totam! Aperiam neque,
+        ducimus ipsa quae, id ex quibusdam, dolorum numquam fugit voluptatibus
+        facere illo enim! Fuga illum provident adipisci rem ipsa, vitae, ipsum
+        illo reprehenderit ullam odit facilis, optio laborum repudiandae culpa
+        dolore ea alias voluptatum aut accusantium itaque distinctio officiis
+        amet consectetur? Non, saepe.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos culpa
+        voluptatibus cum atque pariatur recusandae molestias quidem, ab
+        distinctio illum assumenda quisquam ad facere dolor eius voluptate
+        natus, commodi impedit! Consectetur amet corporis est soluta velit fugit
+        quos, incidunt eius distinctio officia sunt optio totam! Aperiam neque,
+        ducimus ipsa quae, id ex quibusdam, dolorum numquam fugit voluptatibus
+        facere illo enim! Fuga illum provident adipisci rem ipsa, vitae, ipsum
+        illo reprehenderit ullam odit facilis, optio laborum repudiandae culpa
+        dolore ea alias voluptatum aut accusantium itaque distinctio officiis
+        amet consectetur? Non, saepe.
+      </p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
